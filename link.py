@@ -8,7 +8,7 @@ if action == "add":
     tags = input("tags: ").strip()
     with open(BIG_LIST_FILE, "a", newline="") as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow([url, tags])
+        writer.writerow([url, tags, ""])
     exit(1)
 
 if action == "read":
